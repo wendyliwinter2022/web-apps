@@ -1,0 +1,14 @@
+<h1> Display Company</h1>
+<% companies = Company.all %>
+<% contacts = Contact.all %>
+<ul>
+    <% for company in companies %>
+        
+        <% for contact in contacts %>
+          <li> <%= company.name %>  </li>  
+        <% end %>
+        <li> <%= company.name %> </li>
+    <% end %>
+   
+
+</ul>
